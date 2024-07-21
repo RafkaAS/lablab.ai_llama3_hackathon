@@ -28,7 +28,7 @@ generateButton.addEventListener('click', async (event) => {
     });
 
     const data = await response.json();
-    const responseText = data.response;
+    const responseText = data.choices[0].message.content;
 
     responseContainer.innerHTML = `
       <h2>Data Strategy:</h2>
