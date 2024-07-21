@@ -11,7 +11,7 @@ generateButton.addEventListener('click', async (event) => {
 
   const prompt = `Generate a concise data strategy for ${projectName} to improve ${projectArea} by achieving ${primaryGoal} with data. The goal is to ${metrics}. Provide a brief summary and recommended plan, including data collection, analytics, and KPIs, to help ${projectName} achieve its objectives. Limit the response to 500 words.`;
   const bodyPrompt={
-    "model": "meta-llama/Meta-Llama-3-70B-Instruct-Lite",
+    "model": "meta-llama/Meta-Llama-3-8B-Instruct-Turbo",
     "messages": [
       {"role": "user", "content": prompt}
     ]
