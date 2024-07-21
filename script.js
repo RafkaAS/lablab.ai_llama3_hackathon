@@ -1,6 +1,13 @@
 const form = document.getElementById('data-strategy-form');
 const generateButton = document.getElementById('generate-button');
 const responseContainer = document.getElementById('response-container');
+function formatText(input) {
+  let formattedText = input.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+
+  formattedText = formattedText.replace(/\n/g, '<br/>');
+
+  return formattedText;
+}
 
 generateButton.addEventListener('click', async (event) => {
   event.preventDefault();
@@ -28,7 +35,7 @@ generateButton.addEventListener('click', async (event) => {
     });
 
     const data = await response.json();
-    const responseText = data.choices[0].message.content;
+    const responseText = formatText(data.choices[0].message.content);
 
     responseContainer.innerHTML = `
       <h2>Data Strategy:</h2>
