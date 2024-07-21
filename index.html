@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Strategy Generator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Strategy Generator</h1>
+        <form id="data-strategy-form">
+            <div class="form-field">
+                <label for="project-name">Project Name:</label>
+                <input type="text" id="project-name" name="projectName">
+            </div>
+            <div class="form-field">
+                <label for="project-area">Project Area:</label>
+                <input type="text" id="project-area" name="projectArea">
+            </div>
+            <div class="form-field">
+                <label for="primary-goal">Primary Goal:</label>
+                <input type="text" id="primary-goal" name="primaryGoal">
+            </div>
+            <div class="form-field">
+                <label for="metrics">Metrics:</label>
+                <input type="text" id="metrics" name="metrics">
+            </div>
+            <button id="generate-button">Generate Data Strategy</button>
+        </form>
+        <div id="response-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
