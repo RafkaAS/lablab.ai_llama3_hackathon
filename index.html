@@ -9,31 +9,33 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <img src="https://intelpreneur.co/assets/img/logo.png" alt="intelpreneur logo"/>
-        <h1>Data Strategy Generator</h1>
-        <form id="data-strategy-form">
-            <div class="form-field">
-                <label for="project-name">What is the name of your project/business?</label>
-                <input type="text" id="project-name" name="projectName">
-            </div>
-            <div class="form-field">
-                <label for="project-area">What specific project or area of your business do you want to improve with data?</label>
-                <input type="text" id="project-area" name="projectArea">
-            </div>
-            <div class="form-field">
-                <label for="primary-goal">What is your primary goal you'd like to achieve with data (e.g. increase revenue, cut costs, improve customer engagement, enhance decision-making, etc.)?</label>
-                <input type="text" id="primary-goal" name="primaryGoal">
-            </div>
-            <div class="form-field">
-                <label for="metrics">What metrics or outcomes do you want to track to measure the success of your project?</label>
-                <input type="text" id="metrics" name="metrics">
-            </div>
-            <button id="generate-button">Generate Data Strategy</button>
-        </form>
-        <div id="response-container"></div>
+ <div class="container">
+  <header>
+    <img src="https://intelpreneur.co/assets/img/logo.png" alt="intelpreneur logo" style="width: 110px;height: 110px;"><h1>Data Strategy Generator</h1>
+    
+  </header>
+  <form id="data-strategy-form">
+    <div class="form-field">
+      <label for="project-name">What is the name of your project/business?</label>
+      <input type="text" id="project-name" name="projectName">
     </div>
+    <div class="form-field">
+      <label for="project-area">What specific project or area of your business do you want to improve with data?</label>
+      <input type="text" id="project-area" name="projectArea">
+    </div>
+    <div class="form-field">
+      <label for="primary-goal">What is your primary goal you'd like to achieve with data (e.g. increase revenue, cut costs, improve customer engagement, enhance decision-making, etc.)?</label>
+      <input type="text" id="primary-goal" name="primaryGoal">
+    </div>
+    <div class="form-field">
+      <label for="metrics">What metrics or outcomes do you want to track to measure the success of your project?</label>
+      <input type="text" id="metrics" name="metrics">
+    </div>
+    <button id="generate-button">Generate Data Strategy</button>
+  </form>
+  <div id="response-container"></div>
 
+</div>
     <script src="script.js"></script>
 </body>
 </html>
